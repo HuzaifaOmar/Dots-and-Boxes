@@ -244,7 +244,7 @@ UserAction mainMenu(Grid *gameGrid, GameState *currentGame, MovesHistory *movesH
         return enOTHER;
         break;
     case 5:
-        return enEXIT;
+        exit(0);
         break;
     default:
         printf(BHRED "\t\t\t\t\t\t\t\tInvalid input\n" RESET);
@@ -259,21 +259,21 @@ void terminateGame(GameState *currentGame, Player *player1, Player *player2)
     clearConsole();
     if (currentGame->player1Score > currentGame->player2Score)
     {
-        printf(BHBLU "\n\t\t\t\t\t\t\tPLAYER 1 WON\n\n");
+        printf(BHBLU "\n\t\t\t\t\t\tPLAYER 1 WON\n\n");
         printf("\t\t\t\tPlayer 1 New Score: %d", currentGame->player1Score + player1->score);
-        printf(BHRED "\tPlayer 2 New Score: %d\n", currentGame->player1Score + player2->score);
+        printf(BHRED "\tPlayer 2 New Score: %d\n" RESET, currentGame->player2Score + player2->score);
     }
     else if (currentGame->player1Score < currentGame->player2Score)
     {
-        printf(BHRED "\n\t\t\t\t\t\t\tPLAYER 2 WON\n\n");
+        printf(BHRED "\n\t\t\t\t\t\tPLAYER 2 WON\n\n");
         printf(BHBLU "\t\t\t\tPlayer 1 New Score: %d", currentGame->player1Score + player1->score);
-        printf(BHRED "\tPlayer 2 New Score: %d\n" RESET, currentGame->player1Score + player2->score);
+        printf(BHRED "\tPlayer 2 New Score: %d\n" RESET, currentGame->player2Score + player2->score);
     }
     else
     {
         printf(BHWHT "\n\t\t\t\t\t\t  DRAW\n\n" RESET);
         printf(BHBLU "\t\t\t\tPlayer 1 New Score: %d", currentGame->player1Score + player1->score);
-        printf(BHRED "\tPlayer 2 New Score: %d\n" RESET, currentGame->player1Score + player2->score);
+        printf(BHRED "\tPlayer 2 New Score: %d\n" RESET, currentGame->player2Score + player2->score);
     }
 
     updatePlayerScore(player1, currentGame->player1Score);

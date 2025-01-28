@@ -121,9 +121,9 @@ void printTop10Title()
 //* Printing players
 void printFirstThreePlayers(Player *players)
 {
-    printf("\t\t\t\t  |" BHYEL "FIRST: %-14s " RESET "|" BHYEL " %5d " RESET "|\n", players[0].name, players[1].score);
-    printf("\t\t\t\t  |" BHYEL "SECOND: %-13s " RESET "|" BHYEL " %5d " RESET "|\n", players[1].name, players[3].score);
-    printf("\t\t\t\t  |" BHYEL "THIRD: %-14s " RESET "|" BHYEL " %5d " RESET "|\n", players[2].name, players[3].score);
+    printf("\t\t\t\t  |" BHYEL "FIRST: %-14s " RESET "|" BHYEL " %5d " RESET "|\n", players[0].name, players[0].score);
+    printf("\t\t\t\t  |" BHYEL "SECOND: %-13s " RESET "|" BHYEL " %5d " RESET "|\n", players[1].name, players[1].score);
+    printf("\t\t\t\t  |" BHYEL "THIRD: %-14s " RESET "|" BHYEL " %5d " RESET "|\n", players[2].name, players[2].score);
 }
 void printPlayers(Player *players, short playersCount)
 {
@@ -174,6 +174,7 @@ void leaderboard(void (*whatToPrint)(Player *, short))
 
 void updatePlayerScore(Player *player, SmallNumber playerGameScore)
 {
+    player->score += playerGameScore;
     if (player->newPlayer)
     {
         addPlayerToScoreboard(player);

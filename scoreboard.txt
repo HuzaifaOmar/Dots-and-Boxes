@@ -20,7 +20,7 @@ Player: adnan	Score: 99
 Player: afifi	Score: 42
 Player: ahmad	Score: 66
 Player: aiman	Score: 21
-Player: akram	Score: 59
+Player: akram	Score: 61
 Player: alaa	Score: 94
 Player: ali	Score: 39
 Player: allaam	Score: 86
@@ -46,3 +46,8 @@ Player: asmaa	Score: 35
 Player: ahmed	Score: 0
 Player: adel	Score: 13
 Player: lolo	Score: 0
+Player: farida	Score: 9
+Player: huthaifa	Score: 10031
+Player: abdelrahman	Score: 9999
+Player: hamza	Score: 3
+Player: omar	Score: 0
