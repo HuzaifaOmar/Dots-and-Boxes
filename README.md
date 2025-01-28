@@ -1,3 +1,6 @@
+
+
+
 # 🎮 Dots and Boxes Game 🎮
 
 🌟 A classic and engaging implementation of the Dots and Boxes game in **C**! Perfect for two players who love strategy games. Connect the dots, form boxes, and outsmart your opponent to capture the most boxes. Ready to play? Let’s dive in! 🚀
@@ -19,8 +22,7 @@
 
 ### 🎥 Demo Videos
 
-https://github.com/user-attachments/assets/6a3c30f0-8eaa-4aae-b459-de90af757b10
-*Low Quality*
+https://github.com/user-attachments/assets/87f7bfa0-76e8-46d2-8e0d-3368fe35eb07
 
 ---
 
