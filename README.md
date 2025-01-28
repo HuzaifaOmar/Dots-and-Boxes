@@ -19,7 +19,8 @@
 
 ### 🎥 Demo Videos
 
-![Gameplay Demo](./media/DEMO.mp4)
+https://github.com/user-attachments/assets/6a3c30f0-8eaa-4aae-b459-de90af757b10
+*Low Quality*
 
 ---
 
